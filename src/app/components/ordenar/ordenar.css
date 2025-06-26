@@ -1,0 +1,138 @@
+/* Estilo general para delivery */
+#delivery {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 5px solid #ff0000;
+    border-bottom: 5px solid #ff0000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+#delivery h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Texto descriptivo */
+#texto {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Botón */
+#delivery .btn-success {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+#delivery .btn-success i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+#delivery .btn-success:hover {
+    background-color: #d53e3e;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#delivery .btn-success:active {
+    transform: translateY(0);
+}
+
+.bx {
+    color: white;
+}
+
+/* ===================== */
+/* RESPONSIVE DESIGN */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    #delivery h3 {
+        font-size: 2rem;
+    }
+
+    #texto {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    #delivery h3 {
+        font-size: 1.8rem;
+    }
+
+    #texto {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    #delivery .btn-success i {
+        font-size: 1.2rem;
+        margin-right: 6px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    #delivery h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    #texto {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .btn-success {
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+    }
+}

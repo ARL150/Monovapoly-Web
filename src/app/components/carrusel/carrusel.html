@@ -1,0 +1,37 @@
+<section id="carrusel-productos" class="carousel slide" data-bs-ride="carousel">
+    <h3 id="productos" class="titulo-seccion">Nuestros Productos</h3>
+    <p id="texto" class="descripcion-seccion">
+        Explora nuestra selección de productos de alta calidad. ¡Encuentra lo que necesitas con un solo clic!
+    </p>
+
+    <div class="carousel-indicators">
+
+
+        <div class="carousel-indicators">
+            <button *ngFor="let img of imagenes; let i = index" type="button" data-bs-target="#carrusel-productos"
+                [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-current]="i === 0 ? 'true' : null"
+                [attr.aria-label]="'Slide ' + (i + 1)">
+            </button>
+        </div>
+    </div>
+
+    <div class="carousel-inner">
+
+        <div *ngFor="let img of imagenes; let i = index" class="carousel-item" [class.active]="i === 0">
+            <img [src]="img.src" class="d-block w-100 carrusel-img" [alt]="img.alt">
+            <div class="carousel-caption d-none d-md-block">
+                <p>{{ img.descripcion }}</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-productos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carrusel-productos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</section>

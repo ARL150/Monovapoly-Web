@@ -1,0 +1,82 @@
+/* Secciones */
+#home, #about, #delivery {
+    text-align: center;
+}
+
+/* Home Section Styling */
+#home {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 100px 20px; /* Extra padding for spacing */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensures vertical alignment */
+}
+
+/* Container Styling */
+#home .container {
+    background-color: #000; /* Black background inside the container */
+    padding: 30px 40px;
+    border: 3px solid #f00; /* Red border */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red shadow for a glowing effect */
+    border-radius: 8px; /* Slightly rounded corners */
+    animation: fadeIn 2s ease-in-out; /* Animation for fade-in effect */
+    width: 100%;
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* To include padding in width calculation */
+}
+
+#home h2 {
+    font-size: clamp(1.8rem, 5vw, 3rem); /* Tamaño adaptativo */
+    font-weight: 700;
+    color: #ff0019;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    line-height: 1.4;
+    animation: slideUp 1.5s ease-out;
+    word-break: break-word; /* Para evitar que se desborde */
+}
+/* Adding an animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation for text */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    #home h2 {
+        font-size: 2rem; /* Slightly smaller font on smaller screens */
+        padding: 0 10px; /* Add padding for small screens */
+    }
+    
+    #home {
+        padding: 80px 10px; /* Adjust padding for small screens */
+    }
+
+    #home .container {
+        padding: 20px; /* Adjust container padding */
+        width: 90%; /* Use 90% width on smaller screens */
+    }
+}

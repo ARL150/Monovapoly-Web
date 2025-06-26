@@ -1,0 +1,149 @@
+/* Estilos del Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título del Footer */
+.footer-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f00;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%; /* ¡Más larga! Puedes ajustar este valor */
+    max-width: 400px; /* Controla el ancho máximo en pantallas grandes */
+    height: 3px;
+    background-color: #f00;
+    border-radius: 3px;
+    animation: underlineAnimation 1s ease-out forwards;
+}
+
+
+/* Animación de subrayado */
+@keyframes underlineAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Párrafos */
+.footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Enlaces sociales */
+.social {
+    font-size: 1.2rem;
+    color: #ffffff; /* Botones blancos con texto oscuro */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px auto;
+    width: fit-content;
+    padding: 10px 20px; /* Espaciado interno para darle forma */
+    border-radius: 30px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Hover (cambia el color de fondo y agrega un poco de sombra) */
+.social:hover {
+    color: #fff; /* Cambia el texto a blanco al hacer hover */
+    background-color: #000; /* Cambia el fondo a negro al hacer hover */
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Íconos sociales */
+.social {
+    font-size: 1.4rem;
+}
+
+
+/* Pie inferior */
+.footer-bottom {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 1.3rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        font-size: 1.1rem;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+}
+
+.footer-bottom p strong {
+    font-weight: 600;
+    color: #f00; /* Puedes elegir el color que prefieras */
+}
+
+
+/* Formato para el texto 'Calidad, estilo y comunidad en Aguascalientes' */
+#texto-footer {
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+    font-weight: 500; /* Hace el texto ligeramente más grueso */
+    color: #fff; /* Texto blanco */
+    margin: 15px 0; /* Añade márgenes arriba y abajo */
+    padding: 10px; /* Añade algo de espacio dentro del párrafo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil con algo de transparencia */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera para darle profundidad */
+    text-align: center; /* Centrado del texto */
+    transition: all 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+

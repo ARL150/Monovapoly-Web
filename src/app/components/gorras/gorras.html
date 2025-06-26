@@ -1,0 +1,30 @@
+<div class="container-fluid gorras-section px-4 py-5">
+  <h2 class="text-center mb-3 fw-bold display-4 text-uppercase border-bottom pb-2 text-rojo-monovapoly">
+    Gorras Exclusivas
+  </h2>
+
+  <p class="text-center fs-5 fw-semibold text-light mb-5">
+    🧢 Productos únicos que solo <span class="text-rojo-monovapoly">Monovapoly</span> trae para ti 🔥
+  </p>
+
+  <div *ngFor="let categoria of categorias" class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="categoria-titulo display-6 m-0">{{ categoria }}</h3>
+      <button class="btn btn-outline-light" (click)="toggleCategoria(categoria)">
+        {{ categoriasVisibles[categoria] ? 'Ocultar' : 'Mostrar' }}
+      </button>
+    </div>
+
+    <div *ngIf="categoriasVisibles[categoria]" class="row g-4 justify-content-center mt-4">
+      <div *ngFor="let gorra of gorrasPorCategoria(categoria)" class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 gorra-card text-center">
+          <img [src]="gorra.imagen" [alt]="gorra.nombre" class="card-img-top img-gorra" />
+          <div class="card-body">
+            <h5 class="card-title">{{ gorra.nombre }}</h5>
+            <p class="card-text">{{ gorra.marca }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

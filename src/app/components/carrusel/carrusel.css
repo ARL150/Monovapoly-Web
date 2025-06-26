@@ -1,0 +1,165 @@
+/* Carrusel de Productos */
+#carrusel-productos {
+    background-color: #000000; /* Fondo negro */
+    padding: 2rem 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    animation: fadeIn 1s ease-out; /* Animación de entrada */
+}
+
+#carrusel-productos .carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 90%; /* Ajusta el ancho del carrusel */
+    margin: auto;
+}
+
+.carrusel-img {
+    width: 100%; /* Imagen ocupa todo el ancho del carrusel */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 400px; /* Altura máxima para evitar deformación */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+    transition: transform 0.5s ease;
+}
+
+.carrusel-img:hover {
+    transform: scale(1.05); /* Zoom al pasar el mouse */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Iconos blancos */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: #fff; /* Indicadores blancos */
+}
+
+.carousel-indicators .active {
+    background-color: #ff0000; /* Indicador activo verde */
+}
+
+/* Transición suave en los botones */
+button.carousel-control-prev,
+button.carousel-control-next {
+    transition: transform 0.3s ease;
+}
+
+button.carousel-control-prev:hover,
+button.carousel-control-next:hover {
+    transform: scale(1.1);
+}
+
+/* Título de la sección */
+#carrusel-productos h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sección del carrusel */
+#carrusel-productos {
+    background-color: #000; /* Fondo oscuro */
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+}
+
+/* Título principal */
+#carrusel-productos h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fafafa; /* Verde elegante */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Subtítulo */
+#carrusel-productos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+
+/* CSS SUBSCRIBIRSE */
+/* Estilo del botón de suscripción */
+.btn-danger:hover {
+    background-color: #ff0019;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto de sombra en el botón */
+.btn-danger:focus {
+    box-shadow: 0 6px 15px rgba(200, 35, 51, 0.4);
+}
+
+.titulo-seccion {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    color: #1a1a1a;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    animation: fadeInDown 0.8s ease;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 550px;
+    height: 4px;
+    background-color: #ff0000; 
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.descripcion-seccion {
+    font-size: 55px;
+    font-weight: 900px;
+    color: #4a4a4a;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.8;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

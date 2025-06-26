@@ -1,0 +1,102 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+button.btn-outline-light {
+  border-color: #ff0019;
+  color: #fff;
+}
+button.btn-outline-light:hover {
+  background-color: #ff0019;
+  color: #fff;
+  border-color: #ff0019;
+}
+
+
+.text-rojo-monovapoly {
+  color: #fb1100 !important;
+  border-color: #fb1100 !important;
+}
+
+.gorras-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.categoria-titulo {
+  color: #fff;
+  border-left: 6px solid #fb1100;
+  padding-left: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.gorra-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(251, 17, 0, 0.3);
+  transition: transform 0.3s ease;
+  padding: 15px;
+  min-height: 100%;
+}
+
+.gorra-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(251, 17, 0, 0.6);
+}
+
+.img-gorra {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.card-title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #fb1100;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .img-gorra {
+    height: 220px;
+  }
+
+  .categoria-titulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-gorra {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .categoria-titulo {
+    font-size: 1.3rem;
+  }
+}

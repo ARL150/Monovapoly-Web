@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.logo_monovapoly {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  background-color: #000; /* Esto pinta el fondo negro solo de este div */
+  padding: 15px;
+  border: 6px solid #f44336;
+  box-shadow: 0 0 25px #000, 0 0 40px #f44336;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 0.7s infinite;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen */
+.logo_monovapoly img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.1s ease;
+}
