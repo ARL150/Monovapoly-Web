@@ -68,10 +68,10 @@ body{
 
 
 .upcoming-title {
-  font-size: clamp(1.5rem, 4vw, 2.5rem); 
+  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
   font-weight: 700;
   text-align: center;
-  color: #ff0019; 
+  color: #ff0019;
   margin-top: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
