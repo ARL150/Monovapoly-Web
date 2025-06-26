@@ -1,0 +1,105 @@
+{
+  "configVersion": 1,
+  "timestamp": 1750920458792,
+  "index": "https://ARL150.github.io/Monovapoly-Web/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://ARL150.github.io/Monovapoly-Web/favicon.ico",
+        "https://ARL150.github.io/Monovapoly-Web/index.html",
+        "https://ARL150.github.io/Monovapoly-Web/main-I7E4SRZW.js",
+        "https://ARL150.github.io/Monovapoly-Web/manifest.webmanifest",
+        "https://ARL150.github.io/Monovapoly-Web/scripts-WL2QHKC5.js",
+        "https://ARL150.github.io/Monovapoly-Web/styles-XP6OFY7Y.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-128x128.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-144x144.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-152x152.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-192x192.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-384x384.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-512x512.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-72x72.png",
+        "https://ARL150.github.io/Monovapoly-Web/icons/icon-96x96.png",
+        "https://ARL150.github.io/Monovapoly-Web/logo.png",
+        "https://ARL150.github.io/Monovapoly-Web/media/boxicons-5JNJQPUP.woff",
+        "https://ARL150.github.io/Monovapoly-Web/media/boxicons-AQ5N6WP7.woff2",
+        "https://ARL150.github.io/Monovapoly-Web/media/boxicons-GDR4JU3X.ttf",
+        "https://ARL150.github.io/Monovapoly-Web/media/boxicons-NNFHLMOR.svg",
+        "https://ARL150.github.io/Monovapoly-Web/monovapoly.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/1.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/2.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/3.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/4.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/5.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/6.png",
+        "https://ARL150.github.io/Monovapoly-Web/vapes/image.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://ARL150.github.io/Monovapoly-Web/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "https://ARL150.github.io/Monovapoly-Web/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "https://ARL150.github.io/Monovapoly-Web/index.html": "52a8b3d9a56a210d8a07572321fec8a45d81363a",
+    "https://ARL150.github.io/Monovapoly-Web/logo.png": "5ea237ce49746040e96b434a4fe1b40c9e775e99",
+    "https://ARL150.github.io/Monovapoly-Web/main-I7E4SRZW.js": "b332bc027a75f914fc9337c4f2720d22be173c6a",
+    "https://ARL150.github.io/Monovapoly-Web/manifest.webmanifest": "f713d7b003700f9847b496a6870e701c2d38deca",
+    "https://ARL150.github.io/Monovapoly-Web/media/boxicons-5JNJQPUP.woff": "0fd1f4f29e1a933f60c43e067e1decab3336ece7",
+    "https://ARL150.github.io/Monovapoly-Web/media/boxicons-AQ5N6WP7.woff2": "758608b6e39cd423dd99eec3980f8e8aae0d96b0",
+    "https://ARL150.github.io/Monovapoly-Web/media/boxicons-GDR4JU3X.ttf": "f18d97b413c192509c83c445d74b79de2f20af71",
+    "https://ARL150.github.io/Monovapoly-Web/media/boxicons-NNFHLMOR.svg": "a5828816de42e74be1f683532407f373aba7cda7",
+    "https://ARL150.github.io/Monovapoly-Web/monovapoly.png": "8e91ed2d988694c2491b6a71893fd7a191050d83",
+    "https://ARL150.github.io/Monovapoly-Web/scripts-WL2QHKC5.js": "c1b0b7dbf9c9fb61cc4dc027d25f48b5a7b113ad",
+    "https://ARL150.github.io/Monovapoly-Web/styles-XP6OFY7Y.css": "c7c2d89fc066a94abe824b916fb26dceac1798c3",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/1.png": "e2ec4337f0d06fd1460a6f23f83882bbe7310e3c",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/2.png": "3cba543ca69014fcc84d278531ff9efdb468cd0f",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/3.png": "bbb9be03b4b068efddbcea22c87f61081271cf31",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/4.png": "8596cf00828f1a314485bcd96624df79c4c11ff8",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/5.png": "a683b0c1f57d01ba196406479f4a1ca41b471558",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/6.png": "a285ffd792ec7dc740db48503ef3a7b6e9823d71",
+    "https://ARL150.github.io/Monovapoly-Web/vapes/image.png": "d3499ec630a983ca1fa9e23b3e7f078543786437"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
