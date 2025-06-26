@@ -67,12 +67,28 @@ body{
 
 
 
-/* Título de futuras ubicaciones */
 .upcoming-title {
-    color: #ff1100;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); 
+  font-weight: 700;
+  text-align: center;
+  color: #ff0019; 
+  margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulseText 2s infinite alternate;
 }
+
+@keyframes pulseText {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
 
 /* Sección de futuras ubicaciones */
 .upcoming-branches {
@@ -103,7 +119,7 @@ h3.fw-bold:hover {
 
 /* Subtítulo */
 p.text-center {
-    color: #000;
+    color: #ffffff;
     font-size: 1.25rem;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
