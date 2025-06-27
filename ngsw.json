@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1750921174204,
+  "timestamp": 1751009601641,
   "index": "https://ARL150.github.io/Monovapoly-Web/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://ARL150.github.io/Monovapoly-Web/favicon.ico",
         "https://ARL150.github.io/Monovapoly-Web/index.html",
-        "https://ARL150.github.io/Monovapoly-Web/main-UDPZ4F2U.js",
+        "https://ARL150.github.io/Monovapoly-Web/main-WS7Q4FAG.js",
         "https://ARL150.github.io/Monovapoly-Web/manifest.webmanifest",
         "https://ARL150.github.io/Monovapoly-Web/scripts-WL2QHKC5.js",
         "https://ARL150.github.io/Monovapoly-Web/styles-XP6OFY7Y.css"
@@ -64,9 +64,9 @@
     "https://ARL150.github.io/Monovapoly-Web/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "https://ARL150.github.io/Monovapoly-Web/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "https://ARL150.github.io/Monovapoly-Web/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "https://ARL150.github.io/Monovapoly-Web/index.html": "f2f7ad7a31f32e6550586cf2c4830ef6504251ed",
+    "https://ARL150.github.io/Monovapoly-Web/index.html": "39ebddb3d3a282c444774542777044e094f1911c",
     "https://ARL150.github.io/Monovapoly-Web/logo.png": "5ea237ce49746040e96b434a4fe1b40c9e775e99",
-    "https://ARL150.github.io/Monovapoly-Web/main-UDPZ4F2U.js": "ee933c63cf76893fb7928b7c273f7cd40cf5cd90",
+    "https://ARL150.github.io/Monovapoly-Web/main-WS7Q4FAG.js": "0589393050a155849f1d6e08b36fd417db7ff84d",
     "https://ARL150.github.io/Monovapoly-Web/manifest.webmanifest": "f713d7b003700f9847b496a6870e701c2d38deca",
     "https://ARL150.github.io/Monovapoly-Web/media/boxicons-5JNJQPUP.woff": "0fd1f4f29e1a933f60c43e067e1decab3336ece7",
     "https://ARL150.github.io/Monovapoly-Web/media/boxicons-AQ5N6WP7.woff2": "758608b6e39cd423dd99eec3980f8e8aae0d96b0",
