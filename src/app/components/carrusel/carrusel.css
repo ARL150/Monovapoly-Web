@@ -120,10 +120,11 @@ button.carousel-control-next:hover {
 .titulo-seccion::after {
     content: "";
     display: block;
-    width: 550px;
+    width: 80%;           /* ancho relativo, al 80% del ancho del contenedor */
+    max-width: 550px;     /* máximo ancho para pantallas grandes */
     height: 4px;
-    background-color: #ff0000; 
-    margin: 12px auto 0;
+    background-color: #ff0000;
+    margin: 12px auto 0;  /* centrado horizontal */
     border-radius: 2px;
 }
 

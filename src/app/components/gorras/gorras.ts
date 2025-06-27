@@ -14,19 +14,32 @@ export class Gorras implements OnInit {
   gorras: Gorra[] = [];
   categorias: string[] = ['Barbas Hats', 'ALO', 'Goorin Bros'];
   categoriasVisibles: { [key: string]: boolean } = {};
+  indiceActual: { [key: string]: number } = {}; // NUEVO
 
   constructor(private gorrasService: GorrasService) {}
 
   ngOnInit(): void {
     this.gorras = this.gorrasService.getGorras();
-    // Por defecto todas las categorías visibles
     this.categorias.forEach(cat => {
       this.categoriasVisibles[cat] = true;
+      this.indiceActual[cat] = 0;
     });
   }
 
   gorrasPorCategoria(categoria: string): Gorra[] {
     return this.gorras.filter(g => g.marca === categoria);
+  }
+
+  gorraActual(categoria: string): Gorra | undefined {
+    const gorras = this.gorrasPorCategoria(categoria);
+    return gorras[this.indiceActual[categoria]] || undefined;
+  }
+
+  siguienteGorra(categoria: string): void {
+    const gorras = this.gorrasPorCategoria(categoria);
+    if (gorras.length > 0) {
+      this.indiceActual[categoria] = (this.indiceActual[categoria] + 1) % gorras.length;
+    }
   }
 
   toggleCategoria(categoria: string): void {

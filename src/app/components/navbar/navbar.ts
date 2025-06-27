@@ -12,8 +12,11 @@ export class Navbar {
   @ViewChild('sideMenu') sideMenu!: ElementRef;
   @ViewChild('menuToggle') menuToggle!: ElementRef;
   @ViewChild('overlay') overlay!: ElementRef;
+menuAbierto = false;
 
   toggleMenu() {
+      this.menuAbierto = !this.menuAbierto;
+
     const menu = this.sideMenu.nativeElement as HTMLElement;
     const toggle = this.menuToggle.nativeElement as HTMLElement;
     const overlay = this.overlay.nativeElement as HTMLElement;

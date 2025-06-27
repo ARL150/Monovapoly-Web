@@ -13,6 +13,7 @@ import { Suscribirse } from '../suscribirse/suscribirse';
 import { Ubicaciones } from '../ubicaciones/ubicaciones';
 import { BotonWhatsapp } from '../boton-whatsapp/boton-whatsapp';
 import { Gorras } from '../gorras/gorras';
+import { EdadVerificacion } from '../../edad-verificacion/edad-verificacion';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +27,7 @@ import { Gorras } from '../gorras/gorras';
     RedesSociales,
     Suscribirse,
     Ubicaciones,
-    BotonWhatsapp, Gorras
+    BotonWhatsapp, Gorras, EdadVerificacion
   ],
   templateUrl: './home.html',
   styleUrls: ['./home.css']          // plural styleUrls
