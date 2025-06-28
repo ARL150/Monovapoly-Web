@@ -1,6 +1,6 @@
 {
-  "name": "Monovapoly-Web",
-  "short_name": "Monovapoly-Web",
+  "name": "Monovapoly",
+  "short_name": "Monovapoly",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
