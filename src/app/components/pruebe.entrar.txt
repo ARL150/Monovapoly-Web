@@ -1,3 +1,20 @@
+
+
+<app-edad-verificacion
+  *ngIf="!edadVerificada"
+  (verificacion)="handleVerificacion($event)">
+</app-edad-verificacion>
+
+
+<ng-container *ngIf="edadVerificada">
+  <app-navbar></app-navbar>
+  <app-logo></app-logo>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+  <app-boton-whatsapp></app-boton-whatsapp>
+  <app-sidebar></app-sidebar>
+</ng-container>
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -42,6 +59,7 @@ import { ChangeDetectorRef } from '@angular/core';
     BotonWhatsapp,
     Logo,
     Gorras,
+    EdadVerificacion
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
@@ -63,3 +81,44 @@ export class App {
 }
 
 }
+
+import { Component, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-edad-verificacion',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './edad-verificacion.html',
+  styleUrls: ['./edad-verificacion.css']
+})
+export class EdadVerificacion {
+  @Output() verificacion = new EventEmitter<boolean>();
+  visible = true; // controla si el modal se muestra o no
+
+  confirmar(valor: boolean) {
+    console.log('confirmar llamado con:', valor);
+    this.visible = false;  // ocultar modal cuando se confirma o no
+    this.verificacion.emit(valor);
+  }
+
+  ngOnInit() {
+    document.body.style.overflow = 'hidden';
+    console.log("EdadVerificacion se ha mostrado");
+  }
+
+  ngOnDestroy() {
+    document.body.style.overflow = '';
+    console.log("✅ EdadVerificacion fue destruido");
+  }
+}
+
+<!-- edad-verificacion.html -->
+<div class="edad-modal" *ngIf="visible">
+  <div class="modal-content">
+    <h2>¿Tienes más de 18 años?</h2>
+    <button (click)="confirmar(true)">Sí</button>
+    <button (click)="confirmar(false)">No</button>
+  </div>
+</div>
+

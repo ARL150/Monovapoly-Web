@@ -9,11 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./edad-verificacion.css']
 })
 export class EdadVerificacion {
-  @Output() verificacion = new EventEmitter<boolean>();
-
-confirmar(valor: boolean) {
-  console.log('confirmar llamado con:', valor);
-  this.verificacion.emit(valor);
-}
-
+  
 }

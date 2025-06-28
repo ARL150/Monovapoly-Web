@@ -30,12 +30,12 @@
 
         <h3 class="fw-bold mt-5 upcoming-title">Próximamente nuevas ubicaciones 🚀</h3>
         <div class="upcoming-branches">
-            <p>Estamos trabajando en nuevas sucursales en diferentes puntos de la ciudad.</p>
-            <p>¡Pronto anunciaremos más detalles!</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Estamos trabajando en nuevas sucursales en diferentes puntos de la
+                ciudad.</p>
+            <p><i class="bi bi-info-circle-fill"></i> ¡Pronto anunciaremos más detalles!</p>
 
         </div>
-        <br>
-        
+
         <div class="branches-grid-proximas">
             <div *ngFor="let suc of sucursalesProximas" class="branch-proxima"
                 [ngClass]="{'animated-fadeInUp': suc.proximamente}">
