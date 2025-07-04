@@ -12,7 +12,7 @@ import { Gorra } from '../../services/gorras';
 })
 export class Gorras implements OnInit {
   gorras: Gorra[] = [];
-  categorias: string[] = ['Barbas Hats', 'ALO', 'Goorin Bros'];
+  categorias: string[] = ['Barbas Hats', 'ALO', 'Goorin Bros', 'New Era']; // agregada New Era
   categoriasVisibles: { [key: string]: boolean } = {};
   indiceActual: { [key: string]: number } = {}; // NUEVO
 

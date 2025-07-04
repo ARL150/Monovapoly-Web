@@ -2,16 +2,17 @@ import { Injectable } from '@angular/core';
 
 export interface Gorra {
   nombre: string;
-  marca: 'Barbas Hats' | 'ALO' | 'Goorin Bros';
+  marca: 'Barbas Hats' | 'ALO' | 'Goorin Bros' | 'New Era';
   imagen: string;
 }
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GorrasService {
   private gorras: Gorra[] = [
-    // ALO
+    // ALO (sin cambios)
     {
       nombre: 'ALO Black & White',
       marca: 'ALO',
@@ -28,9 +29,9 @@ export class GorrasService {
       imagen: 'https://aloyoga.com.mx/cdn/shop/files/A0007U_0001_b1_a2_750x_e476b03c-54e8-4cd8-828a-8a9492828510.webp?v=1694532677&width=750'
     },
 
-    // Barbas Hats
+    // Barbas Hats (más modelos)
     {
-      nombre: 'Gorra Barbas Hats x Rich The Kid - Chrome I BLACKOUT ',
+      nombre: 'Gorra Barbas Hats x Rich The Kid - Chrome I BLACKOUT',
       marca: 'Barbas Hats',
       imagen: 'https://drop-shop.mx/cdn/shop/files/55f19ebe-b37c-4409-bedb-32662b357186.jpg?v=1745691126&width=1346'
     },
@@ -49,9 +50,18 @@ export class GorrasService {
       marca: 'Barbas Hats',
       imagen: 'https://drop-shop.mx/cdn/shop/files/3f248418-70f5-41a6-b884-90a55c4d0fba.jpg?v=1745518110&width=1346'
     },
+    {
+      nombre: 'Barbas Hats B*ANGING B*TCHES (',
+      marca: 'Barbas Hats',
+      imagen: 'https://www.hatsmexico.store/cdn/shop/files/04C4FE4E-428B-4423-9A4B-883109D51245.webp?v=1734504563&width=1646' // ejemplo
+    },
+    {
+      nombre: 'Barbas Hats BEAR SCOTT',
+      marca: 'Barbas Hats',
+      imagen: 'https://www.hatsmexico.store/cdn/shop/files/AA286CC0-E540-4805-9967-E945B57C1E64.webp?v=1734504882&width=1646' // ejemplo
+    },
 
-
-    // Goorin Bros
+    // Goorin Bros (más modelos)
     {
       nombre: 'Goorin Panther',
       marca: 'Goorin Bros',
@@ -83,15 +93,47 @@ export class GorrasService {
       imagen: 'https://goorin.mx/cdn/shop/products/101-0385-CHA-F01.jpg?v=1672857824'
     },
     {
-      nombre: 'Goorin Strong Bear',
+      nombre: 'Goorin Gran Rojo',
       marca: 'Goorin Bros',
-      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkAbftOhW9tXZJALNz6vG3r3a-GvMTykP4A&s'
+      imagen: 'https://goorin.com/cdn/shop/products/101-0751-RED-F01.jpg?v=1663718409'
     },
     {
       nombre: 'Goorin Tiger Claw',
       marca: 'Goorin Bros',
       imagen: 'https://goorin.com/cdn/shop/files/101-1986-ORA-F01.jpg?v=1732225022'
     },
+    {
+      nombre: 'Goorin Arctic Fox',
+      marca: 'Goorin Bros',
+      imagen: 'https://hatstore.imgix.net/HS1008286_1.jpg' // ejemplo
+    },
+    {
+      nombre: 'Goorin Red Hawk',
+      marca: 'Goorin Bros',
+      imagen: 'https://goorinshop.eu/cdn/shop/files/101-1932-RED-L01.jpg?v=1741267702&width=1946' // ejemplo
+    },
+
+    // New Era (nueva marca)
+    {
+      nombre: 'New Era Los Angeles Dodgers',
+      marca: 'New Era',
+      imagen: 'https://www.newera.mx/cdn/shop/files/60435006_W9FORTYAF_WMN_MLB_LOADOD_BL_3QL_1296x.png?v=1715030179' // ejemplo
+    },
+    {
+      nombre: 'New Era New York Yankees MLB Floral 9FORTY',
+      marca: 'New Era',
+      imagen: 'https://www.newera.mx/cdn/shop/files/60667540_9FORTYAF_MLB_NEYYAN_CHRM_3QL_1296x.jpg?v=1746175212' // ejemplo
+    },
+    {
+      nombre: 'New Era Golden State Warriors',
+      marca: 'New Era',
+      imagen: 'https://www.newera.mx/cdn/shop/files/60673616_9FORTYMCAF_NBA25CWDRFT940MCAF_GOLWAR_OTC_3QR_1296x.png?v=1749051807' // ejemplo
+    },
+    {
+      nombre: 'New Era New York Mets MLB Chrome Arch ',
+      marca: 'New Era',
+      imagen: 'https://www.newera.mx/cdn/shop/files/60604781_9FORTYMC_20AF_20TRUCKER_9FORTYMCAFCHROME22957_NEYMET_OTC_3QL_1296x.png?v=1744344051' // ejemplo
+    }
   ];
 
   getGorras(): Gorra[] {
