@@ -7,26 +7,29 @@
     Productos únicos que solo <span class="text-rojo-monovapoly">Monovapoly</span> trae para ti 🔥
   </p>
 
-  <div *ngFor="let categoria of categorias" class="mb-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h3 class="categoria-titulo display-6 m-0">{{ categoria }}</h3>
-      <button class="btn btn-outline-light px-4 py-2" (click)="toggleCategoria(categoria)">
-        {{ categoriasVisibles[categoria] ? 'Ocultar' : 'Mostrar' }}
-      </button>
-    </div>
+  <!-- Menú de categorías -->
+  <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+    <button
+      *ngFor="let cat of categorias"
+      class="btn btn-outline-light px-3 py-2"
+      [ngClass]="{ 'active-categoria': categoriaSeleccionada === cat }"
+      (click)="seleccionarCategoria(cat)"
+    >
+      {{ cat }}
+    </button>
+  </div>
 
-    <div *ngIf="categoriasVisibles[categoria]" class="d-flex justify-content-center">
-      <div class="card gorra-card text-center" style="max-width: 360px;">
-        <ng-container *ngIf="gorraActual(categoria) as gorra">
-          <img [src]="gorra.imagen" [alt]="gorra.nombre" class="card-img-top img-gorra mb-3" />
-          <div class="card-body">
-            <h5 class="card-title">{{ gorra.nombre }}</h5>
-            <p class="card-text">{{ gorra.marca }}</p>
-            <button class="btn btn-rojo-monovapoly mt-4" (click)="siguienteGorra(categoria)">
-              <i class="bi bi-arrow-right-circle-fill me-2"></i> Ver otra gorra
-            </button>
-          </div>
-        </ng-container>
+  <!-- Contenedor horizontal -->
+<div class="gorras-scroll-wrapper">
+  <div class="gorras-scroll-container">
+    <div
+      *ngFor="let gorra of gorrasPorCategoria(categoriaSeleccionada)"
+      class="gorra-card me-3 text-center"
+    >
+      <img [src]="gorra.imagen" [alt]="gorra.nombre" class="img-gorra mb-3" />
+      <div class="card-body">
+        <h5 class="card-title">{{ gorra.nombre }}</h5>
+        <p class="card-text">{{ gorra.marca }}</p>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+/* ==== GLOBAL ==== */
 body {
   background-color: #000;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* ==== SECCIÓN GORRAS ==== */
 .gorras-section {
   background-color: #000;
   color: #fff;
@@ -21,6 +23,7 @@ body {
   opacity: 0.9;
 }
 
+/* ==== COLORES PERSONALIZADOS ==== */
 .text-rojo-monovapoly {
   color: #fb1100 !important;
 }
@@ -54,6 +57,13 @@ button.btn-outline-light:hover {
   border-color: #ff0019;
 }
 
+.active-categoria {
+  background-color: #fb1100 !important;
+  color: #fff !important;
+  border-color: #fb1100 !important;
+}
+
+/* ==== TÍTULOS ==== */
 .categoria-titulo {
   color: #fff;
   border-left: 6px solid #fb1100;
@@ -64,6 +74,7 @@ button.btn-outline-light:hover {
   text-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
 }
 
+/* ==== TARJETAS ==== */
 .gorra-card {
   background-color: #121212;
   border-radius: 16px;
@@ -72,6 +83,9 @@ button.btn-outline-light:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem;
   min-height: 100%;
+  min-width: 280px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 
 .gorra-card:hover {
@@ -102,6 +116,77 @@ button.btn-outline-light:hover {
   letter-spacing: 1px;
 }
 
+/* ==== SCROLL CONTAINER ==== */
+.gorras-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+
+/* ==== CONTENEDOR DE SCROLL ==== */
+.gorras-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.gorras-scroll-container {
+  display: flex;
+  gap: 1.2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-inline: 0.5rem;
+  justify-content: start;
+}
+
+/* ==== TARJETAS GORRAS ==== */
+.gorra-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(251, 17, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.8rem;
+  width: 220px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.gorra-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(251, 17, 0, 0.4);
+}
+
+/* ==== IMAGEN ==== */
+.img-gorra {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* ==== TEXTO ==== */
+.card-title {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.card-text {
+  color: #fb1100;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+
+
+/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   .categoria-titulo {
     font-size: 1.5rem;
