@@ -55,6 +55,13 @@ export class SucursalesService {
       horario: '¡Abrimos todos los días de 9 a.m. a 10 p.m.!',
       telefono: '449-203-0408',
       mapa: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3703.8172442002206!2d-102.284757!3d21.825991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDQ5JzMzLjYiTiAxMDLCsDE3JzA1LjEiVw!5e0!3m2!1ses-419!2smx!4v1746987737925!5m2!1ses-419!2smx'
+    },    
+    {
+      nombre: 'Farias',
+      direccion: 'Valentín Gómez Farías 214, Barrio de Guadalupe, 20059 Aguascalientes, Ags.',
+      horario: '¡Abrimos todos los días de 10 a.m. a 7 p.m.!',
+      telefono: '449-203-0408',
+      mapa: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.2954637109037!2d-102.29910690000001!3d21.884695300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429efe55ad718d3%3A0x9de005e3e1e65ad9!2sImportaciones%20y%20Regalos%20Francia!5e0!3m2!1ses-419!2smx!4v1752350342532!5m2!1ses-419!2smx'
     },
     {
       nombre: 'León 🦁',
