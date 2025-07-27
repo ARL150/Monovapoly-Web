@@ -1,0 +1,12 @@
+<!-- edad-verificacion.html -->
+<div class="edad-modal" *ngIf="visible">
+  <div class="modal-content">
+    <img src="../monovapoly.png" alt="Logo" class="logo">
+    <h2>¿Tienes más de 18 años?</h2>
+    <p class="mensaje">Para acceder a este sitio debes confirmar que tienes más de 18 años.</p>
+    <div class="botones">
+      <button class="btn si" (click)="confirmar(true)">Sí</button>
+      <button class="btn no" (click)="confirmar(false)">No</button>
+    </div>
+  </div>
+</div>

@@ -29,19 +29,10 @@ import { ChangeDetectorRef } from '@angular/core';
     RouterOutlet,
     Navbar,
     Footer,
-    Carrusel,
-    Home,
-    HomeAgs,
     SidebarComponent,
-    Ordenar,
-    PreguntasFrecuentes,
-    QuienesSomos,
-    RedesSociales,
-    Suscribirse,
-    Ubicaciones,
     BotonWhatsapp,
     Logo,
-    Gorras,
+    EdadVerificacion
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
@@ -51,15 +42,19 @@ export class App {
 
   constructor(private cd: ChangeDetectorRef) {}
 
+  ngOnInit() {
+    // Siempre bloquea scroll al cargar la app (porque se debe verificar)
+    document.body.style.overflow = 'hidden';
+  }
+
   handleVerificacion(valor: boolean) {
-  if (valor) {
-    setTimeout(() => {
+    if (valor) {
       this.edadVerificada = true;
+      document.body.style.overflow = 'auto'; // desbloquea scroll
       this.cd.detectChanges();
-    });
-  } else {
-    window.location.href = 'https://www.google.com';
+    } else {
+      window.location.href = 'https://www.google.com';
+    }
   }
 }
 
-}
