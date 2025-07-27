@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753418493330,
+  "timestamp": 1753653580117,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-Q2JAD7A2.js",
+        "/main-PTTGTMB6.js",
         "/manifest.webmanifest",
         "/scripts-WL2QHKC5.js",
-        "/styles-XP6OFY7Y.css"
+        "/styles-Q7565B7C.css"
       ],
       "patterns": []
     },
@@ -49,6 +49,10 @@
         "/media/boxicons-AQ5N6WP7.woff2",
         "/media/boxicons-GDR4JU3X.ttf",
         "/media/boxicons-NNFHLMOR.svg",
+        "/media/fa-brands-400-WVWUIHCX.woff2",
+        "/media/fa-regular-400-I5DJMINO.woff2",
+        "/media/fa-solid-900-C5F6UWGT.woff2",
+        "/media/fa-v4compatibility-EXH5IDFW.woff2",
         "/monovapoly.png",
         "/vapes/1.png",
         "/vapes/2.png",
@@ -80,17 +84,21 @@
     "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/icons/icon-96x96.jpeg": "168c5d5c366b49a761325ce84b24bc4e3b4190eb",
     "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/index.html": "c3f7486a9434b740bc4276786e4485c9e57b926d",
+    "/index.html": "796d8bcbe40fa4355d5e8d134a47e74c5f4b3579",
     "/logo.png": "5ea237ce49746040e96b434a4fe1b40c9e775e99",
-    "/main-Q2JAD7A2.js": "e941ea426be4ac5ac6095b0bbbdc4772993eaf63",
+    "/main-PTTGTMB6.js": "91157d08e23ef9a219147be210c92e2672de3f86",
     "/manifest.webmanifest": "941eb89b4e7c22bddcfd84c372c2796d0d1d2ce2",
     "/media/boxicons-5JNJQPUP.woff": "0fd1f4f29e1a933f60c43e067e1decab3336ece7",
     "/media/boxicons-AQ5N6WP7.woff2": "758608b6e39cd423dd99eec3980f8e8aae0d96b0",
     "/media/boxicons-GDR4JU3X.ttf": "f18d97b413c192509c83c445d74b79de2f20af71",
     "/media/boxicons-NNFHLMOR.svg": "a5828816de42e74be1f683532407f373aba7cda7",
+    "/media/fa-brands-400-WVWUIHCX.woff2": "a225a588336ef6110e541a64cefcb16cd4118a97",
+    "/media/fa-regular-400-I5DJMINO.woff2": "5d19c7ada8e2e23fe7949606abf45c72bd842801",
+    "/media/fa-solid-900-C5F6UWGT.woff2": "f5f3d18d4b9d3e7f339fbdcc8ad1975657665f91",
+    "/media/fa-v4compatibility-EXH5IDFW.woff2": "e346f8b0d6fa5ce68c1d5a41f66355578361449e",
     "/monovapoly.png": "8e91ed2d988694c2491b6a71893fd7a191050d83",
     "/scripts-WL2QHKC5.js": "c1b0b7dbf9c9fb61cc4dc027d25f48b5a7b113ad",
-    "/styles-XP6OFY7Y.css": "c7c2d89fc066a94abe824b916fb26dceac1798c3",
+    "/styles-Q7565B7C.css": "75feee59877531a65b16132f3d3c45d3c79ae451",
     "/vapes/1.png": "e2ec4337f0d06fd1460a6f23f83882bbe7310e3c",
     "/vapes/2.png": "3cba543ca69014fcc84d278531ff9efdb468cd0f",
     "/vapes/3.png": "bbb9be03b4b068efddbcea22c87f61081271cf31",
