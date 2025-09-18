@@ -1,0 +1,124 @@
+
+
+<app-edad-verificacion
+  *ngIf="!edadVerificada"
+  (verificacion)="handleVerificacion($event)">
+</app-edad-verificacion>
+
+
+<ng-container *ngIf="edadVerificada">
+  <app-navbar></app-navbar>
+  <app-logo></app-logo>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+  <app-boton-whatsapp></app-boton-whatsapp>
+  <app-sidebar></app-sidebar>
+</ng-container>
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+import { Navbar } from './components/navbar/navbar';
+import { Footer } from './components/footer/footer';
+import { Carrusel } from './components/carrusel/carrusel';
+import { Home } from './components/home/home';
+import { HomeAgs } from './components/home-ags/home-ags';
+import { Ordenar } from './components/ordenar/ordenar';
+import { PreguntasFrecuentes } from './components/preguntas-frecuentes/preguntas-frecuentes';
+import { QuienesSomos } from './components/quienes-somos/quienes-somos';
+import { RedesSociales } from './components/redes-sociales/redes-sociales';
+import { Suscribirse } from './components/suscribirse/suscribirse';
+import { Ubicaciones } from './components/ubicaciones/ubicaciones';
+import { BotonWhatsapp } from "./components/boton-whatsapp/boton-whatsapp";
+
+import { Logo } from './components/logo/logo';
+import { Gorras } from './components/gorras/gorras';
+import { SidebarComponent } from "./components/sidebar/sidebar";
+import { EdadVerificacion } from './edad-verificacion/edad-verificacion';
+import { ChangeDetectorRef } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    Navbar,
+    Footer,
+    Carrusel,
+    Home,
+    HomeAgs,
+    SidebarComponent,
+    Ordenar,
+    PreguntasFrecuentes,
+    QuienesSomos,
+    RedesSociales,
+    Suscribirse,
+    Ubicaciones,
+    BotonWhatsapp,
+    Logo,
+    Gorras,
+    EdadVerificacion
+  ],
+  templateUrl: './app.html',
+  styleUrls: ['./app.css']
+})
+export class App {
+  edadVerificada = false;
+
+  constructor(private cd: ChangeDetectorRef) {}
+
+  handleVerificacion(valor: boolean) {
+  if (valor) {
+    setTimeout(() => {
+      this.edadVerificada = true;
+      this.cd.detectChanges();
+    });
+  } else {
+    window.location.href = 'https://www.google.com';
+  }
+}
+
+}
+
+import { Component, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-edad-verificacion',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './edad-verificacion.html',
+  styleUrls: ['./edad-verificacion.css']
+})
+export class EdadVerificacion {
+  @Output() verificacion = new EventEmitter<boolean>();
+  visible = true; // controla si el modal se muestra o no
+
+  confirmar(valor: boolean) {
+    console.log('confirmar llamado con:', valor);
+    this.visible = false;  // ocultar modal cuando se confirma o no
+    this.verificacion.emit(valor);
+  }
+
+  ngOnInit() {
+    document.body.style.overflow = 'hidden';
+    console.log("EdadVerificacion se ha mostrado");
+  }
+
+  ngOnDestroy() {
+    document.body.style.overflow = '';
+    console.log("✅ EdadVerificacion fue destruido");
+  }
+}
+
+<!-- edad-verificacion.html -->
+<div class="edad-modal" *ngIf="visible">
+  <div class="modal-content">
+    <h2>¿Tienes más de 18 años?</h2>
+    <button (click)="confirmar(true)">Sí</button>
+    <button (click)="confirmar(false)">No</button>
+  </div>
+</div>
+

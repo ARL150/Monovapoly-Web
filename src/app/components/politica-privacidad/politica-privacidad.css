@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.privacy-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #fff;
+  color: #333;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.privacy-container:hover {
+  box-shadow: 0 15px 50px rgba(255, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+
+.privacy-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f00;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.privacy-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #f00;
+  animation: underlineAnimation 1s ease-out forwards;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.privacy-section:last-child {
+  border-bottom: none;
+}
+
+.privacy-section h3 {
+  font-size: 1.6rem;
+  color: #f00;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.privacy-section h3::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.privacy-section p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #444;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+
+.privacy-section p a {
+  color: #f00;
+  text-decoration: none;
+}
+
+.privacy-section p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .privacy-container {
+    padding: 35px 20px;
+  }
+
+  .privacy-title {
+    font-size: 2.2rem;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .privacy-section p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .privacy-title {
+    font-size: 2rem;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .privacy-section h3::before {
+    font-size: 1rem;
+  }
+
+  .privacy-section p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}

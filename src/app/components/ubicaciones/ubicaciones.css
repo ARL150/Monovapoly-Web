@@ -1,0 +1,406 @@
+:root {
+  --color-fondo: #000;
+  --color-texto-blanco: #000; /* texto negro para cards */
+  --color-rojo: #fb1100;
+  --color-rojo-claro: #d9534f;
+  --color-rojo-hover: #ff1100;
+  --color-gris-claro: #666;
+  --color-gris-medio: #333;
+  --color-amarillo: #f0ad4e;
+  --color-azul: #5bc0de;
+  --sombra-suave: rgba(0, 0, 0, 0.15);
+  --sombra-media: rgba(0, 0, 0, 0.2);
+  --radius: 25px;
+  --transition: 0.3s ease;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto-blanco);
+  font-family: var(--font-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+#branches {
+  padding: 2.5rem 1rem 4rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Estilo para el encabezado con línea debajo */
+#branches h3 {
+    font-size: 3rem;
+    /* Tamaño de la fuente */
+    font-weight: 700;
+    /* Peso de la fuente */
+    color: #fff;
+    /* Color blanco para el texto */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 30px;
+    /* Espacio debajo del encabezado */
+    position: relative;
+    /* Necesario para posicionar la línea */
+}
+
+#branches h3::after {
+    content: '';
+    /* Crear el pseudo-elemento */
+    display: block;
+    /* Hacerlo un bloque */
+    width: 50%;
+    /* Ancho de la línea */
+    height: 3px;
+    /* Grosor de la línea */
+    background-color: #fb1100;
+    /* Color rojo */
+    margin: 10px auto 0;
+    /* Centrar la línea y agregar margen superior */
+}
+
+
+
+.upcoming-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  font-weight: 700;
+  text-align: center;
+  color: #ff0019;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulseText 2s infinite alternate;
+}
+
+/* Título principal */
+h3.fw-bold {
+    color: #f90000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en el título */
+h3.fw-bold:hover {
+    transform: scale(1.05);
+    color: #ff1100;
+}
+
+@keyframes pulseText {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+
+/* TÍTULOS */
+.upcoming-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s forwards;
+  cursor: default;
+  user-select: none;
+}
+
+h3.fw-bold {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--color-rojo-claro);
+  transition: transform var(--transition), color var(--transition);
+}
+
+
+
+.upcoming-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--color-rojo-hover);
+  animation: pulseText 2s infinite alternate;
+}
+
+/* PÁRRAFOS */
+p.text-center,
+.upcoming-branches p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 300;
+  color: var(--color-texto-blanco);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  font-family: var(--font-secondary);
+}
+
+/* SECCIÓN PRÓXIMAS SUCURSALES */
+.upcoming-branches {
+  background-color: var(--color-rojo);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  color: var(--color-texto-blanco);
+  margin-bottom: 2rem;
+}
+
+/* GRID SUCURSALES ACTUALES */
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+  padding: 0 1rem;
+    border-radius: 20px; /* antes era var(--radius), ahora más redondeado */
+
+}
+
+/* TARJETA SUCURSAL */
+.branch {
+  background-color: #fff; /* blanco */
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.25rem 1rem;
+  text-align: center;
+    border-radius: var(--radius); /* Aplica el redondeado más grande */
+
+  color: #000; /* texto negro */
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.branch:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO SUCURSAL */
+.branch-title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #000; /* negro */
+}
+
+/* DETALLES SUCURSAL */
+.address,
+.schedule,
+.phone {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #000; /* negro */
+}
+
+.address i {
+  color: var(--color-rojo-claro);
+  margin-right: 6px;
+}
+
+.schedule i {
+  color: var(--color-amarillo);
+  margin-right: 6px;
+}
+
+.phone i {
+  color: var(--color-azul);
+  margin-right: 6px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* MAPA */
+.branch iframe {
+  width: 100%;
+  height: 280px; /* altura uniforme y un poco mayor para más simetría */
+  border: none;
+  border-radius: var(--radius); /* Igual de redondeado que la tarjeta */
+  margin-top: 0.75rem;
+  display: block;
+}
+
+/* GRID PRÓXIMAS SUCURSALES */
+.branches-grid-proximas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  box-sizing: border-box;
+}
+
+.branch-proxima {
+  background-color: #fff; /* blanco */
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: transform var(--transition);
+  color: #000; /* texto negro */
+}
+
+.branch-proxima:hover {
+  transform: translateY(-5px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.upcoming-branches p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.8;
+background: linear-gradient(145deg, #ff0000, #cc0000);
+  padding: 1.25rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  max-width: 800px;
+  margin: 1.5rem auto;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 1s ease;
+  transition: transform 0.3s ease;
+}
+
+.upcoming-branches p:hover {
+  transform: scale(1.04);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* TÍTULO PRÓXIMA SUCURSAL */
+.branch-title-proxima {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--color-rojo-claro);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* DETALLES PRÓXIMA SUCURSAL */
+.address-proxima,
+.schedule-proxima,
+.phone-proxima {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #000; /* negro */
+}
+
+/* MAPA PRÓXIMA SUCURSAL */
+.branch-proxima iframe {
+  width: 100%;
+  height: 280px; /* igual altura que otros iframes */
+  border: none;
+  border-radius: var(--radius);
+  margin-top: 0.6rem;
+  display: block;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulseText {
+  0% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.03); }
+}
+
+/* RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 768px) {
+  #branches {
+    padding: 2rem 1rem 3rem;
+  }
+  h3.fw-bold {
+    font-size: 2rem;
+  }
+  .branches-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
+  .branch {
+    padding: 1rem;
+  }
+  .branch-proxima {
+    padding: 1rem;
+  }
+  .branch-title-proxima {
+    font-size: 1.5rem;
+  }
+  .address-proxima,
+  .schedule-proxima,
+  .phone-proxima {
+    font-size: 0.9rem;
+  }
+  .branch-proxima iframe {
+    height: 240px; /* también escala un poco en móvil */
+  }
+  .branch iframe {
+    height: 240px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  h3.fw-bold {
+    font-size: 1.5rem;
+  }
+  p.text-center,
+  .upcoming-branches p {
+    font-size: 0.9rem;
+  }
+  .branches-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr)); 
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+  .branch-title {
+    font-size: 1.25rem;
+  }
+  .branch {
+    padding: 0.75rem 1rem;
+  }
+  .branch-proxima {
+    padding: 0.75rem 1rem;
+  }
+  .branch-title-proxima {
+    font-size: 1.25rem;
+  }
+  .address-proxima,
+  .schedule-proxima,
+  .phone-proxima {
+    font-size: 0.85rem;
+  }
+  .branch-proxima iframe,
+  .branch iframe {
+    height: 200px; /* más compacto en móviles */
+  }
+}
+

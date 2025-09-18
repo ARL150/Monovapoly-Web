@@ -1,0 +1,22 @@
+<!-- Botón de menú lateral -->
+<div #menuToggle class="menu-toggle" (click)="toggleMenu()">
+    <i class="bx bx-menu"></i>
+</div>
+
+
+<!-- Menú lateral -->
+<div #sideMenu class="navigation" id="sideMenu">
+    <div class="close-btn" (click)="closeMenu()">&#10005;</div>
+    <ul>
+        <br>
+        <li><a class="nav-link" [routerLink]="['/home']">Inicio</a></li>
+        <li><a class="nav-link" [routerLink]="['/quienes-somos']">¿Quiénes somos?</a></li>
+        <li><a class="nav-link" [routerLink]="['/ubicaciones']">Sucursales</a></li>
+        <li><a class="nav-link" [routerLink]="['/servicio-domicilio']">Servicio a domicilio</a></li>
+        <li><a class="nav-link" [routerLink]="['/redes-sociales']">Redes Sociales</a></li>
+        <li><a class="nav-link" [routerLink]="['/preguntas-frecuentes']">Preguntas Frecuentes</a></li>
+    </ul>
+</div>
+
+<!-- Fondo oscuro al abrir menú -->
+<div #overlay class="menu-overlay" (click)="closeMenu()" style="display: none;"></div>

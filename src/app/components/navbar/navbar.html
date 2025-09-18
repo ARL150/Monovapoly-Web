@@ -1,0 +1,27 @@
+<!-- Línea roja superior -->
+<div class="top-bar"></div>
+
+<!-- Header -->
+<header>
+  <div class="container-header">
+    <a [routerLink]="['/home']" class="logo-link">
+      <img src="./monovapoly.png" alt="Monovapoly Logo" class="logo">
+    </a>
+
+    <nav class="navbar">
+      <ul class="nav">
+        <li><a class="nav-link" [routerLink]="['/home']">Inicio</a></li>
+        <li><a class="nav-link" [routerLink]="['/ubicaciones']">Sucursales</a></li>
+        <li><a class="nav-link" [routerLink]="['/servicio-domicilio']">Servicio a domicilio</a></li>
+
+        <!-- Estos 3 se ocultan en móviles -->
+        <li class="hide-on-mobile"><a class="nav-link" [routerLink]="['/quienes-somos']">¿Quiénes somos?</a></li>
+        <li class="hide-on-mobile"><a class="nav-link" [routerLink]="['/redes-sociales']">Redes Sociales</a></li>
+        <li class="hide-on-mobile"><a class="nav-link" [routerLink]="['/preguntas-frecuentes']">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Línea roja inferior -->
+<div class="bottom-bar"></div>

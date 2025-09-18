@@ -1,0 +1,45 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Banner */
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%; /* ocupa todo el ancho */
+      background-color: #FF0000; /* rojo sólido */
+      padding: 8px 0; /* más delgado */
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .banner-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 12s linear infinite;
+      font-size: 1rem; /* tamaño más pequeño para que sea delgado */
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black; /* contorno negro */
+      padding: 0 10px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Espacio debajo del banner */
+    .content {
+      margin-top: 40px; /* ajustado a la altura del banner */
+      padding: 20px;
+    }
+
+    /* Responsivo: texto más pequeño en móviles */
+    @media (max-width: 600px) {
+      .banner-text {
+        font-size: 0.9rem;
+      }
+    }

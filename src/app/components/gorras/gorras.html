@@ -1,0 +1,36 @@
+<div class="container-fluid gorras-section px-4 py-5">
+  <h2 class="text-center mb-3 fw-bold display-4 text-uppercase text-rojo-monovapoly gorras-titulo-principal">
+    🧢 Gorras Exclusivas
+  </h2>
+
+  <p class="text-center fs-5 fw-semibold text-light mb-5 gorras-subtitulo">
+    Productos únicos que solo <span class="text-rojo-monovapoly">Monovapoly</span> trae para ti 🔥
+  </p>
+
+  <!-- Menú de categorías -->
+  <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+    <button
+      *ngFor="let cat of categorias"
+      class="btn btn-outline-light px-3 py-2"
+      [ngClass]="{ 'active-categoria': categoriaSeleccionada === cat }"
+      (click)="seleccionarCategoria(cat)"
+    >
+      {{ cat }}
+    </button>
+  </div>
+
+  <!-- Contenedor horizontal -->
+<div class="gorras-scroll-wrapper">
+  <div class="gorras-scroll-container">
+    <div
+      *ngFor="let gorra of gorrasPorCategoria(categoriaSeleccionada)"
+      class="gorra-card me-3 text-center"
+    >
+      <img [src]="gorra.imagen" [alt]="gorra.nombre" class="img-gorra mb-3" />
+      <div class="card-body">
+        <h5 class="card-title">{{ gorra.nombre }}</h5>
+        <p class="card-text">{{ gorra.marca }}</p>
+      </div>
+    </div>
+  </div>
+</div>

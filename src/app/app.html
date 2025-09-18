@@ -1,0 +1,14 @@
+<app-banner></app-banner>>
+<app-edad-verificacion
+  *ngIf="!edadVerificada"
+  (verificacion)="handleVerificacion($event)">
+</app-edad-verificacion>
+
+<ng-container *ngIf="edadVerificada">
+  <app-navbar></app-navbar>
+  <app-logo></app-logo>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+  <app-boton-whatsapp></app-boton-whatsapp>
+  <app-sidebar></app-sidebar>
+</ng-container>
