@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1758466229699,
+  "timestamp": 1760561799113,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-AFTDREV4.js",
+        "/main-TAZGC4PI.js",
         "/manifest.webmanifest",
         "/scripts-WL2QHKC5.js",
         "/styles-Q7565B7C.css"
@@ -84,9 +84,9 @@
     "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/icons/icon-96x96.jpeg": "168c5d5c366b49a761325ce84b24bc4e3b4190eb",
     "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/index.html": "379f6b7bf8f2e09214957e7aa6472fbb95a1446b",
+    "/index.html": "58104fc5d47464cce2de77407126128483a20fab",
     "/logo.png": "5ea237ce49746040e96b434a4fe1b40c9e775e99",
-    "/main-AFTDREV4.js": "f1383ad92a368776e37ddaa61e8e5dfc507d07b6",
+    "/main-TAZGC4PI.js": "80e652e5d5a0df4d74289e25a49d5d8cb93f1799",
     "/manifest.webmanifest": "941eb89b4e7c22bddcfd84c372c2796d0d1d2ce2",
     "/media/boxicons-5JNJQPUP.woff": "0fd1f4f29e1a933f60c43e067e1decab3336ece7",
     "/media/boxicons-AQ5N6WP7.woff2": "758608b6e39cd423dd99eec3980f8e8aae0d96b0",
