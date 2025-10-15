@@ -75,6 +75,12 @@ export class SucursalesService {
       horario: 'Lunes a viernes de 9 a.m. a 10 p.m. y domingo de 10 a.m. a 5 p.m.',
       telefono: '477-426-8029',
       mapa: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8491366954145!2d-101.68605342572968!3d21.15840128052345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf35fae557a5%3A0x56c82ca6622417ab!2sBlvd.%20Adolfo%20L%C3%B3pez%20Mateos%202832%2C%20El%20Rosario%2C%2037125%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses!2smx!4v1752898534328!5m2!1ses!2smx'
+    },{
+      nombre: 'Leon - Moderno',
+      direccion: 'Blvr. Mariano Escobedo Pte. 2205, León Moderno, 37480 Guanajuato LOS ALDAMA Gto MX, Supermanzana DE, 37480 León de los Aldama, Gto., México',
+      horario: 'Lunes a viernes de 9 a.m. a 10 p.m. y domingo de 12 a.m. a 9 p.m.',
+      telefono: '477-426-8029',
+      mapa: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8491366954145!2d-101.68605342572968!3d21.15840128052345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf35fae557a5%3A0x56c82ca6622417ab!2sBlvd.%20Adolfo%20L%C3%B3pez%20Mateos%202832%2C%20El%20Rosario%2C%2037125%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses!2smx!4v1752898534328!5m2!1ses!2smx'
     },
     // {
     // nombre: 'León 🦁',

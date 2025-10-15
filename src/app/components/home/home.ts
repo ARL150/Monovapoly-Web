@@ -14,6 +14,7 @@ import { Ubicaciones } from '../ubicaciones/ubicaciones';
 import { BotonWhatsapp } from '../boton-whatsapp/boton-whatsapp';
 import { Gorras } from '../gorras/gorras';
 import { EdadVerificacion } from '../../edad-verificacion/edad-verificacion';
+import { PromoNuevo } from '../promo-nuevo/promo-nuevo';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,7 @@ import { EdadVerificacion } from '../../edad-verificacion/edad-verificacion';
     RedesSociales,
     Suscribirse,
     Ubicaciones,
-    BotonWhatsapp, Gorras, EdadVerificacion
+    BotonWhatsapp, Gorras, EdadVerificacion, PromoNuevo
   ],
   templateUrl: './home.html',
   styleUrls: ['./home.css']          // plural styleUrls

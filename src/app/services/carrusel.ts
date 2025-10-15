@@ -15,7 +15,6 @@ export class CarruselService {
     { src: 'https://vapematemx.com/cdn/shop/files/rabbeat.png?v=1740179981', alt: 'Producto 5', descripcion: '' },
     { src: 'https://vapeomex.com/wp-content/uploads/2024/02/strawberrywatermelon-1.png', alt: 'Producto 6', descripcion: '' },
     { src: 'https://static.wixstatic.com/media/af7afa_6ef98c87ad4047ffa43f67e46939b848~mv2.png/v1/fit/w_500,h_500,q_90/file.png', alt: 'Producto 6', descripcion: '' }
-
   ];
 
   getImagenes() {

@@ -1,0 +1,33 @@
+<section id="carrusel-productos" class="carousel slide">
+  <h3 class="titulo-seccion">Nueva Colección de Gorras</h3>
+  <p class="descripcion-seccion">
+    Próximamente llegan nuestras nuevas gorras exclusivas.  
+    <strong>¡La nueva mercancía que marcará tendencia está por llegar!</strong>
+  </p>
+
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let img of imagenes; let i = index"
+      type="button"
+      [class.active]="i === index"
+      (click)="goto(i)"
+      [attr.aria-label]="'Slide ' + (i + 1)">
+    </button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div *ngFor="let img of imagenes; let i = index" class="carousel-item" [class.active]="i === index">
+      <img [src]="img.src" class="d-block carrusel-img" [alt]="img.alt || 'Nueva gorra exclusiva'" loading="lazy">
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" (click)="prev()">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" (click)="next()">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</section>

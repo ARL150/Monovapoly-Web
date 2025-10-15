@@ -21,6 +21,7 @@ import { SidebarComponent } from "./components/sidebar/sidebar";
 import { EdadVerificacion } from './edad-verificacion/edad-verificacion';
 import { ChangeDetectorRef } from '@angular/core';
 import { Banner } from './components/banner/banner';
+import { PromoNuevo } from './components/promo-nuevo/promo-nuevo';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,7 @@ import { Banner } from './components/banner/banner';
     SidebarComponent,
     BotonWhatsapp,
     Logo,
-    EdadVerificacion, Banner
+    EdadVerificacion, Banner,
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
